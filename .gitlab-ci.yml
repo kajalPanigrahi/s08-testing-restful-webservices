@@ -1,0 +1,9 @@
+image: java:8-jdk
+
+stages:
+  - test
+  
+maven-test:
+  image: maven:3.5.2-jdk-8
+  stage: test
+  script: "mvn test"
